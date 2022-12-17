@@ -1,0 +1,42 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.0.0/p5.js"></script>
+    <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+
+       <link rel="stylesheet" href="style.css">
+ 
+        <title>Doodle net demo</title>
+    </head>
+    <body>
+        <div id="MyModal" class="modal fade">
+            <div class="modal-content"> 
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">❌</button> 
+            <h1 class="modal-tittle">Sketchs</h1>
+                
+                </div>
+            <div class="modal-body">
+                <img src="sketch1.png">
+                <img src="sketch2.png">
+            </div>
+            
+            </div>
+
+                
+        </div>
+        <h1>Sketch Identification</h1>
+        <button id="Show Sketch" data-toggle="modal" data-target="#MyModal">Show Sketch</button>
+    <br>
+    <br>
+    <h3> Label :  <span id="span1"></span></h3>
+    <h3> Confidence <span id="span2"></span></h3>
+    <button onclick="clearcanvas()">Clear Canvas</button>
+
+    <script src="main.js"></script>
+    </body>
+    
+
+</html>
